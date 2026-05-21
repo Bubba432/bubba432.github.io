@@ -920,40 +920,64 @@ Copy
         </div>
       </div>
  
-    </div>
-  </section>
- 
-  <!-- CONTACT -->
-  <section id="contact">
-    <p class="contact-eyebrow reveal">04 — Let's Work Together</p>
-    <h2 class="contact-headline reveal">Got a project<br />in mind?</h2>
-    <p class="contact-sub reveal">
-      Whether it's a new product, an existing codebase, or just an idea on a napkin —
-      I'd love to hear about it.
-    </p>
-    <a href="mailto:hello@davidhuter.com" class="contact-email reveal">hello@davidhuter.com</a>
-    <ul class="contact-socials reveal">
-      <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-      <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
-      <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-    </ul>
-  </section>
- 
-  <footer>
-    <span>© 2025 David Huter</span>
-    <span>Designed & built with care</span>
-  </footer>
- 
-  <script>
-    // Scroll reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background: #f4f0e8;">
+          <svg class="project-thumb-pattern" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+            <defs><pattern id="p5" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+              <circle cx="15" cy="15" r="2" fill="#c8a97e"/></pattern></defs>
+            <rect width="400" height="200" fill="url(#p5)"/>
+          </svg>
+          <span class="project-thumb-label">05</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">AP CSA</span>
+            <span class="project-tag">GitHub</span>
+          </div>
+          <h3 class="project-name">AP CSA Final Project</h3>
+          <p class="project-desc">
+            A final course project built for AP Computer Science A, demonstrating
+            object-oriented programming and user-focused application design.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/phAPCSA25period1/final-project-Bubba432" target="_blank" class="project-link">
+              GitHub
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-thumb" style="background: #eef2fb;">
+          <svg class="project-thumb-pattern" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+            <defs><pattern id="p6" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="25" x2="25" y2="0" stroke="#5b7aaf" stroke-width="0.8"/></pattern></defs>
+            <rect width="400" height="200" fill="url(#p6)"/>
+          </svg>
+          <span class="project-thumb-label" style="color:#4b6ba0;">06</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Data Analysis</span>
+            <span class="project-tag">GitHub</span>
+          </div>
+          <h3 class="project-name">AP CSA Data Analysis Project</h3>
+          <p class="project-desc">
+            A data analysis project showcasing analysis, visualization, and insight
+            generation from real-world datasets in an AP Computer Science curriculum.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/phAPCSA25period1/data-analysis-project-Bubba432" target="_blank" class="project-link">
+              GitHub
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
     }, { threshold: 0.12 });
     reveals.forEach(el => observer.observe(el));
  
